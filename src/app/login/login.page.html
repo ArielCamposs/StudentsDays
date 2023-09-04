@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar id="toolbar1">
+    <ion-title id="titulo1">StudentsDays</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="login_img" src="https://www.tipicochileno.cl/wp-content/uploads/2021/04/blog-H-escuela-rural-min-2.png" />
+    <ion-card-header>
+      <ion-card-title id="titulo2">Inicio de sesión</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button id="ingresar" expand="block" (click)="ingresar()">Ingresar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
