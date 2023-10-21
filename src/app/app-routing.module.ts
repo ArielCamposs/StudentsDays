@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'lista',
+    loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'popup-component',
+    loadChildren: () => import('./popup-component/popup-component.module').then( m => m.PopupComponentPageModule)
+  },
 ];
 
 @NgModule({
