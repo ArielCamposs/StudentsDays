@@ -10,7 +10,7 @@ export class HomePage {
 
   data:any;
 
-  constructor(private activateRoute: ActivatedRoute, private router: Router) {
+  constructor(private activateRoute: ActivatedRoute, private router: Router, private _router: Router) {
     // Se llama a la ruta activa y se obtiene sus parametros mediante una suscripción
     this.activateRoute.queryParams.subscribe(params =>{//utilizo lambda
       if (this.router.getCurrentNavigation()?.extras.state) {
@@ -22,6 +22,13 @@ export class HomePage {
     });
   }
 
+  goOut() {
+    this._router.navigate(['/home']);
+  }
+  
+  goLista(){
+    this._router.navigate(['/lista']);
+  }
   
 
 }

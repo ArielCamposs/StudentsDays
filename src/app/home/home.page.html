@@ -13,7 +13,7 @@
   <img src="https://i.ytimg.com/vi/3TmYBWOKtLo/maxresdefault.jpg" alt="profesor">
   <ion-button color="tertiary" expand="block">REGISTRAR ASISTENCIA</ion-button>
 
-  <ion-button color="tertiary" expand="block">VER ESTUDIANTES</ion-button>
+  <ion-button color="tertiary" expand="block" (click)="goLista()">VER ESTUDIANTES</ion-button>
  
 
 
@@ -31,7 +31,7 @@
         <ion-icon name="color-palette"></ion-icon>
       </ion-fab-button>
       <ion-fab-button>
-        <ion-icon name="exit-outline"></ion-icon>      </ion-fab-button>
+        <ion-icon name="exit-outline" (click)="goOut()"></ion-icon></ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>
