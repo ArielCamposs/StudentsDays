@@ -5,17 +5,6 @@
       <p>Bienvenido: {{data.usuario}}</p>
     </ion-title>
   </ion-toolbar>
-  <ion-segment [scrollable]="true" value="heart">
-    <ion-segment-button value="uno">
-      <ion-icon name="home"></ion-icon>
-    </ion-segment-button>
-    <ion-segment-button value="dos">
-      <ion-icon name="heart"></ion-icon>
-    </ion-segment-button>
-    <ion-segment-button value="tres">
-      <ion-icon name="musical-notes"></ion-icon>
-    </ion-segment-button>
-  </ion-segment>
 </ion-header>
 
 <ion-content [fullscreen]="true" padding>
@@ -24,7 +13,7 @@
   <img src="https://i.ytimg.com/vi/3TmYBWOKtLo/maxresdefault.jpg" alt="profesor">
   <ion-button color="tertiary" expand="block">Registrar Asistencia</ion-button>
   <ion-button color="tertiary" expand="block" (click)="pagina1()">Ingresar alumno/a</ion-button>
-  <ion-button color="tertiary" expand="block" (click)="pagina2()">Lista de alumnos</ion-button>
+  <ion-button color="tertiary" expand="block">Lista de alumnos</ion-button>
   <ion-button color="tertiary" expand="block">Calendario de evaluaciones</ion-button>
 
 

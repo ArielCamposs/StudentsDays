@@ -32,8 +32,4 @@ export class HomePage {
     this.router.navigate(["/not-found"])
   }
 
-  pagina2(){
-    this.router.navigate(["/not-found"])
-  }
-
 }
