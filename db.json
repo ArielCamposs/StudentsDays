@@ -15,21 +15,5 @@
   ],
   "profile": {
     "name": "typicode"
-  },
-
-  
-    "escuela":[
-        {
-            "id":1,
-            "nombre": "ariel",
-            "contraseña": 123456
-
-        },
-        {
-            "id":2,
-            "nombre": "nayadeth",
-            "contraseña": 1234567       
-         }
-    ]
-            
+  }           
 }
