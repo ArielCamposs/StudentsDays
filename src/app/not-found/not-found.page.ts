@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
+
+
 
 @Component({
   selector: 'app-not-found',
@@ -9,14 +9,12 @@ import { NavController } from '@ionic/angular';
 })
 export class NotFoundPage implements OnInit {
 
-  nacCtrl = inject(NavController)
 
-  constructor(private navCtrl:NavController) {}
+
+  constructor() {}
 
   ngOnInit() {
   }
 
-  volver(){
-    this.navCtrl.navigateForward('/home');
-  }
 }
+
